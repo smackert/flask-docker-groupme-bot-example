@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  web:
+    container_name: groupme-bot2-web-1
+    build: .
+    ports:
+      - 42010:5000
+    volumes:
+      - .:/app
+    restart: unless-stopped
+    environment:
+      FLASK_DEBUG: true
+      IS_PRODUCTION: false

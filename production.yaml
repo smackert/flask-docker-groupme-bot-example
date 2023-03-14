@@ -1,0 +1,5 @@
+services:
+  web:
+    environment:
+      FLASK_DEBUG: false
+      IS_PRODUCTION: true 
